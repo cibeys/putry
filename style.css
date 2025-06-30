@@ -730,7 +730,7 @@ body.dark .timeline-description li::before {
 /* ===== TKK SECTION ===== */
 .tkk-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
     gap: 2rem;
     margin-top: 2rem;
     width: 100%;
@@ -787,17 +787,19 @@ body.dark .timeline-description li::before {
 }
 
 .tkk-image {
-    margin-top: 1rem;
-    border-radius: 8px;
-    overflow: hidden;
-    max-height: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
 }
 
 .tkk-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
 .tkk-card:hover {
